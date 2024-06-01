@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <>
@@ -9,11 +11,11 @@ export default function Home() {
 
         <div class="flex items-center justify-between flex-wrap">
           <div class="mx-5">
-            <a href="#" class="text-md text-white px-8 py-3 leading-none border rounded-xl border-white hover:border-transparent hover:bg-blue-700 transition-all duration-100 ease-linear">Login</a>
+            <Link href="#" class="text-md text-white px-8 py-3 leading-none border rounded-xl border-white hover:border-transparent hover:bg-blue-700 transition-all duration-100 ease-linear">Login</Link>
           </div>
           
           <div class="mx-5">
-            <a href="#" class="text-md text-white px-8 py-3 bg-blue-700 leading-none rounded-xl transition-all duration-100 ease-linear">Sign Up</a>
+            <Link href="#" class="text-md text-white px-8 py-3 bg-blue-700 leading-none rounded-xl transition-all duration-100 ease-linear">Sign Up</Link>
           </div>
         </div>
       </nav>
@@ -24,7 +26,7 @@ export default function Home() {
           <p6 class="text-md">FTC Duck</p6>
           <p1 class="text-6xl font-light">Your personal assistant.<br></br>For ALL things FTC.</p1>
           <p3 class="text-xl font-semibold">A free and easy-to-use resource for teams starting off in FTC.<br></br>Powered by ChatGPT.</p3>
-          <a href="#" class="text-md text-white px-8 py-4 self-center bg-blue-700 leading-none rounded-xl hover:px-10 transition-all duration-200 ease-linear">Get Started</a>
+          <Link href="/signup" class="text-md text-white px-8 py-4 self-center bg-blue-700 leading-none rounded-xl hover:px-10 transition-all duration-200 ease-linear">Get Started</Link>
         </div>
       </main>
     </>

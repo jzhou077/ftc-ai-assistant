@@ -21,10 +21,19 @@ body {
   flex-direction: column;
   background-color: rgb(65, 65, 65);
   height: 100vh;
+  color: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.sidebar {
+  background-color: #373737;
+}
+
+.secondary-text-color {
+  color: #A4A4A4
 }
