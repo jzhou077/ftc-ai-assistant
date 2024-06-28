@@ -4,7 +4,7 @@ import { Sidebar } from "@/src/components/ui/Sidebar";
 import { SuggestedChat } from '@/src/components/ui/SuggestedChat';
 
 export default function Chat() {
-    let isChatting = false
+    let isChatting = true
 
     return (
         <main className="flex h-screen w-full">
