@@ -4,20 +4,20 @@ export default function Chatbox(props) {
     return (
         props.sender.toLowerCase() == "user" ?
         
-        <div className="flex w-full justify-end text-end">
+        <div className="flex w-full justify-end text-end my-2">
             <div className="flex flex-row gap-4">
                 <div className="max-w-[650px] bg-[#555555] p-4 rounded-2xl">
                     <p>{props.text}</p>
                 </div>
 
-                <div className="h-10 w-10 rounded-full bg-gray-400"></div>
+                <div className="h-10 w-10 rounded-full bg-gray-400 mt-1"></div>
             </div>
         </div>
         :
         <>
-            <div className="flex flex-col w-full justify-start text-start gap-1 group">
+            <div className="flex flex-col w-full justify-start text-start gap-1 group my-2">
                 <div className="flex flex-row gap-4">
-                    <div className="h-10 w-10 rounded-full bg-gray-400"></div>
+                    <div className="h-10 w-10 rounded-full bg-gray-400 mt-1"></div>
 
                     <div className="flex flex-col gap-1">
                         <div className="max-w-[650px] bg-[#555555] p-4 rounded-2xl">
