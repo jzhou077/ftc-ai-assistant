@@ -1,5 +1,5 @@
 import AuthenticationForm from '../../../components/ui/AuthenticationForm'
-import { signUp } from '../actions'
+import { signUp, signInWithGoogle } from '../actions'
 import { createClient } from '../../utils/supabase/server'
 
 import { redirect } from 'next/navigation'
