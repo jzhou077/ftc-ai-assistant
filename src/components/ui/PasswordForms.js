@@ -19,7 +19,7 @@ export default function PasswordForms(props) {
       }, [])
 
     return (
-        props.form === "sendEmail" ?
+        form === "sendEmail" ?
         <section className="flex flex-col justify-center items-center text-center top-1/2 translate-y-1/2">
             <h1 className="text-3xl pb-3">Reset Password</h1>
             <p className="mb-5">Enter your email below to reset your password.</p>

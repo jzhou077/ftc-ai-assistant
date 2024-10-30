@@ -17,7 +17,6 @@ export default async function Chat() {
     }
 
     const profileLetter = data.user.email[0].toUpperCase()
-    // const retrievedMessages = await retrieveMessages('thread_l9XPmD6lczDjJVI6d3uxM8Zv')
     const threadIds = await getThreadIds(data.user.id)
     const threads = []
     for (let i = 0; i < threadIds.length; i++) {
