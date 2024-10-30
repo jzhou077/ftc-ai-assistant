@@ -27,7 +27,7 @@ export default function AuthenticationForm(props) {
                         </div>
                         <button onClick={(e) => {
                             e.preventDefault()
-                            props.handleGoogleOAuth()
+                            props.handleGoogleOAuth(window.location.origin)
                         }} className="flex flex-row items-center text-center justify-between bg-[#3F3F3F] w-4/5 aspect-[6] rounded-[10px] px-3 text-base font-light">
                             <svg className="fixed justify-self-start" width="40" height="40" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M50.6272 27.5247C50.6272 25.5822 50.4664 24.1647 50.1183 22.6947H27.4844V31.4621H40.77C40.5022 33.6409 39.0558 36.9222 35.8414 39.1271L35.7964 39.4206L42.9528 44.8537L43.4486 44.9022C48.0021 40.7809 50.6272 34.7171 50.6272 27.5247Z" fill="#4285F4"/>
@@ -61,7 +61,7 @@ export default function AuthenticationForm(props) {
                         </div>
                         <button onClick={(e) => {
                             e.preventDefault()
-                            props.handleGoogleOAuth()
+                            props.handleGoogleOAuth(window.location.origin)
                         }} className="flex flex-row items-center text-center justify-between bg-[#3F3F3F] w-4/5 aspect-[6] rounded-[10px] px-3 text-base font-light">
                             <svg className="fixed justify-self-start" width="40" height="40" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M50.6272 27.5247C50.6272 25.5822 50.4664 24.1647 50.1183 22.6947H27.4844V31.4621H40.77C40.5022 33.6409 39.0558 36.9222 35.8414 39.1271L35.7964 39.4206L42.9528 44.8537L43.4486 44.9022C48.0021 40.7809 50.6272 34.7171 50.6272 27.5247Z" fill="#4285F4"/>

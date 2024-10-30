@@ -2,7 +2,6 @@
 
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
-import { headers } from 'next/headers'
 
 import { createClient } from '../utils/supabase/server'
 
@@ -56,15 +55,13 @@ export async function signOut() {
   redirect('/')
 }
 
-export async function signInWithGoogle() {  
+export async function signInWithGoogle(headerUrl) {  
   const supabase = createClient()
-  const headersList = headers()
-  const header_url = headersList.get('x-origin') || ""
 
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: 'google',
     options: {
-      redirectTo: `${header_url}/callback`,
+      redirectTo: `${headerUrl}/callback`,
     }
   })
 
