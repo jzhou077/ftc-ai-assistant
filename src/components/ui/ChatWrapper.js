@@ -42,8 +42,8 @@ export default function ChatWrapper(props) {
         setHasUpdatedMessages(true)
     }
 
-    props.threads.length > 0 ?? useEffect(() => {
-        dummy.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
+    useEffect(() => {
+        dummy ?? dummy.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
     }, [messages.length, messages[messages.length - 1]?.content])
 
     return (

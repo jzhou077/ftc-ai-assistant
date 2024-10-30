@@ -6,6 +6,8 @@ export default function AuthenticationForm(props) {
     const [password, setPassword] = useState('')
     const [repeatPassword, setRepeatPassword] = useState('')
 
+    console.log(window.location.origin)
+
     return (
         props.type === "signup" ?
         <>
