@@ -13,6 +13,6 @@ export default async function SignUp() {
     }
 
     return (
-        <AuthenticationForm handleSubmit={signUp} type="signup"/>
+        <AuthenticationForm handleSubmit={signUp} handleGoogleOAuth={signInWithGoogle} type="signup"/>
     )
 }
