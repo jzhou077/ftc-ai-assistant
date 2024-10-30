@@ -22,7 +22,7 @@ export async function signIn(formEmail, formPassword) {
   }
 
   revalidatePath('/', 'layout')
-  redirect('/')
+  redirect('/chat')
 }
 
 export async function signUp(formEmail, formPassword) {
@@ -40,7 +40,7 @@ export async function signUp(formEmail, formPassword) {
   }
 
   revalidatePath('/', 'layout')
-  redirect('/')
+  redirect('/chat')
 }
 
 export async function signOut() {
