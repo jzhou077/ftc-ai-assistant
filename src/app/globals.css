@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  overflow-y: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,7 +20,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(65, 65, 65);
+  background-color: #2D2D2D;
   height: 100vh;
   color: white;
 }
@@ -35,6 +36,11 @@ body {
   height: 1rem;
 }
 
+::-webkit-scrollbar:horizontal {
+  width: 1rem;
+  height: 0.5rem;
+}
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
@@ -44,10 +50,17 @@ body {
   border-radius: 1000px;
 }
 
-.sidebar {
-  background-color: #373737;
-}
-
 .secondary-text-color {
   color: #A4A4A4
+}
+
+.markdown > * {
+  all: revert;
+}
+
+pre {
+  overflow-x: scroll;
+  background-color: rgb(9, 9, 9);
+  padding: 15px;
+  margin: 10px 0px 10px 0px;
 }
