@@ -43,7 +43,7 @@ export default function ChatWrapper(props) {
     }
 
     useEffect(() => {
-        dummy ?? dummy.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
+        dummy ? dummy.current.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' }) : ''
     }, [messages.length, messages[messages.length - 1]?.content])
 
     return (
